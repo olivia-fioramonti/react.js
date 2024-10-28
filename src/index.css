@@ -3,5 +3,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  
+  text-align: center;
+  align-items: center;
+}
+h1{
+  background-color:  rgb(228, 30, 136);
+}
+footer{
+  background-color:  rgb(228, 30, 136) ;
 }

@@ -1,21 +1,30 @@
 import  "./navbar.css";
-
-import CartWidget from "./CartWidget";
+import CartWidget from "./CartWidget"
+import { Link, NavLink } from "react-router-dom"
 const NavBar = () => {
-   const styleH2 = { color:"black",fontSize: "30px" }
+   const styleH2 = { fontSize: "30px" }
    
    return(
         <nav className= "navbar" >
-            <h2 style= { styleH2 } > Estilismo</h2>
+            <h2 style= { styleH2 } > Customized Clothing</h2>
 
-            <ul>
-                <li>
-                    Camperas de Jean 
+            <ul className="categories" >
+                <li className="category"> 
+                 <Link to="/category/Camperas">    Camperas de Jean  </Link> 
+                </li> 
+                <li className="category"> 
+                 <Link to="/category/Pantalones" >   Pantalones  </Link>
                 </li>
-                <li>Shorts</li>
-                <li>Accesorios</li>
+                <li className="category" >
+                 <Link to="/category/Accesorios" >   Accesorios  </Link>
+                </li>
             </ul>
 
+            <Link to="/" className="brand primary-font-color"  >
+             <p className="tittle-brand" > Scorpion Art Place </p>
+          
+            </Link> 
+            
             <CartWidget />
         </nav>
     )

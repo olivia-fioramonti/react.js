@@ -6,11 +6,50 @@
     justify-content: space-around;
     align-items: center;
 }
-.navbar ul{
+.navbar .categories{
+    width: 33.3%;
+    height: 100%;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     list-style: none;
-}
-.navbar ul li{
     padding: 0 20px;
+}
+.categories .category{
+    list-style: none;
+    align-items: center;
+    background-color:  rgb(228, 30, 136);
+    padding: 0 10px;
+    
+    
+}
+
+.brand{
+    width: 33.3%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brand .tittle-brand{
+    padding: 0 10px;
+    font-weight: 700;
+    background-color: rgb(228, 30, 136);
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 300;
+}
+
+h1{
+    align-items: center;
+}
+
+.cartwidget{
+    width: 33.3%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
